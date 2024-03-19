@@ -88,6 +88,7 @@ forge create lib/ens-contracts/contracts/resolvers/PublicResolver.sol:PublicReso
 
 #### Interact
 
+[Public Resolver interface](https://docs.ens.domains/resolvers/interfaces)
 [Namehash online](https://swolfeyes.github.io/ethereum-namehash-calculator/)
 
 ```shell
