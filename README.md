@@ -14,7 +14,6 @@ Resolva o captcha e insira o endereço da sua carteira:
 - Depois de um minuto, clique em Parar de mineirar, e então os fundos vão ser transferidos para o seu endereço.
 ![](<images/mining result.png>)
 
-
 ## Create ENS domain
 
 Agora que já temos fundos na cadeia da Sepolia, é possível comprar nosso domínio de teste na ENS.
@@ -40,20 +39,45 @@ Agora que já temos fundos na cadeia da Sepolia, é possível comprar nosso dom�
 - Confirmar transação.
 ![](<images/confirm transaction again.png>)
 
-
 - Profile criado!
 ![](cimages/reated.png)
 
-
 ## Deploy do Resolver
-
 
 ### Requirements
 
 - [Metamask](https://metamask.io)
 - [Foundry](https://book.getfoundry.sh/)
 
-## Usage
+## Remix Deploy
+
+[Remix Ethereum IDE](https://remix.ethereum.org)
+
+```solidity
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity >=0.8.2 <0.9.0;
+
+import "https://github.com/ensdomains/ens-contracts/blob/staging/contracts/resolvers/PublicResolver.sol";
+
+contract MyResolver is PublicResolver {
+    
+    constructor(
+        ENS _ens,
+        INameWrapper wrapperAddress,
+        address _trustedETHController,
+        address _trustedReverseRegistrar
+    ) PublicResolver(
+         _ens,
+         wrapperAddress,
+         _trustedETHController,
+         _trustedReverseRegistrar
+    ) {
+
+    }
+}
+```
+
+## Local deploy
 
 ### Installation
 
