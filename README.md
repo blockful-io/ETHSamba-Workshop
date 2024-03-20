@@ -6,13 +6,13 @@ Para assinar a transação e criar um domínio de teste ENS, é necessário obte
 
 - Acesse um dos faucets da Sepolia, como https://sepolia-faucet.pk910.de/#/
 Resolva o captcha e insira o endereço da sua carteira:
-![alt text](<get sepholia eth.png>)
+![](<images/get sepholia eth.png>)
 
 - Start mining to get founds:
-![alt text](<start mining eth.png>)
+![](<images/start mining eth.png>)
 
 - Depois de um minuto, clique em Parar de mineirar, e então os fundos vão ser transferidos para o seu endereço.
-![alt text](<mining result.png>)
+![](<images/mining result.png>)
 
 
 ## Create ENS domain
@@ -20,29 +20,29 @@ Resolva o captcha e insira o endereço da sua carteira:
 Agora que já temos fundos na cadeia da Sepolia, é possível comprar nosso domínio de teste na ENS.
 
 - Acesse o aplicativo da ENS (https://app.ens.domains/) e conecte sua carteira:
-![alt text](<connect metamask at ens.png>)
+![](<images/connect metamask at ens.png>)
 
 - Selecione sua conta com seploliaETH minerado.
-![alt text](<connect metamask 2.0.png>)
+![](<images/connect metamask 2.0.png>)
 
 - Escolha um nome para o seu domínio ENS.
-![alt text](<select ens name.png>)
+![](<images/select ens name.png>)
 
 - Selecione a duração do domínio.
-![alt text](<domain time.png>)
+![](<images/domain time.png>)
 
 - Inicie a transação.
-![alt text](<start transaction.png>)
+![](<images/start transaction.png>)
 
 - Aguarde a conclusão da transação.
-![alt text](<waiting transaction.png>)
+![](<images/waiting transaction.png>)
 
 - Confirmar transação.
-![alt text](<confirm transaction again.png>)
+![](<images/confirm transaction again.png>)
 
 
 - Profile criado!
-![alt text](created.png)
+![](cimages/reated.png)
 
 
 ## Deploy do Resolver
@@ -152,3 +152,9 @@ cast send 0x2E662240DDF295d3055071a84a7a0d100AAD8b30 "setText(bytes32 node,strin
 --rpc-url <rpc-url> \
 0xf790f34d644b981e4f85ed0b8ed66e48d4117829e666903f2efcd597c14f5de1 avatar blockful.png
 ```
+
+## Discord
+
+Join us on Discord:
+
+![](images/qr-code.png)
