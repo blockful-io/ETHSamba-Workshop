@@ -1,15 +1,54 @@
 # ETH Samba ENS Workshop
+O objetivo do workshop é que possamos deployar um contrato de Resolver da ENS com algumas informações pessoais, criar um domínio da ENS e depois usar esse proprio contrato que deployamos junto a interface frontend da ENS.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Mint de eth na Sepholia
+Para assinar a transação e criar um domínio de teste ENS, é necessário obter um pouco de ether na carteira. Para fazer isso, siga os próximos passos:
 
-Foundry consists of:
+- Acesse um dos faucets da Sepolia, como https://sepolia-faucet.pk910.de/#/
+Resolva o captcha e insira o endereço da sua carteira:
+![alt text](<get sepholia eth.png>)
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- Start mining to get founds:
+![alt text](<start mining eth.png>)
 
-## Requirements
+- Depois de um minuto, clique em Parar de mineirar, e então os fundos vão ser transferidos para o seu endereço.
+![alt text](<mining result.png>)
+
+
+## Create ENS domain
+
+Agora que já temos fundos na cadeia da Sepolia, é possível comprar nosso domínio de teste na ENS.
+
+- Acesse o aplicativo da ENS (https://app.ens.domains/) e conecte sua carteira:
+![alt text](<connect metamask at ens.png>)
+
+- Selecione sua conta com seploliaETH minerado.
+![alt text](<connect metamask 2.0.png>)
+
+- Escolha um nome para o seu domínio ENS.
+![alt text](<select ens name.png>)
+
+- Selecione a duração do domínio.
+![alt text](<domain time.png>)
+
+- Inicie a transação.
+![alt text](<start transaction.png>)
+
+- Aguarde a conclusão da transação.
+![alt text](<waiting transaction.png>)
+
+- Confirmar transação.
+![alt text](<confirm transaction again.png>)
+
+
+- Profile criado!
+![alt text](created.png)
+
+
+## Deploy do Resolver
+
+
+### Requirements
 
 - [Metamask](https://metamask.io)
 - [Foundry](https://book.getfoundry.sh/)
