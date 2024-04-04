@@ -1,4 +1,4 @@
-# ETH Samba ENS Workshop
+# ENS Workshop
 O objetivo do workshop é que possamos deployar um contrato de Resolver da ENS com algumas informações pessoais, criar um domínio da ENS e depois usar esse proprio contrato que deployamos junto a interface frontend da ENS.
 
 ## Mint de eth na Sepholia
